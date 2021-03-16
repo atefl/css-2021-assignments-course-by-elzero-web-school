@@ -1,0 +1,23 @@
+/* Valid */
+._user-name {
+}
+
+/* valid */
+.-user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Not Valid */
+.1user-name {
+}
+
+/* Not valid */
+.@user-name {
+}
+
+/* Not VAlid */
+.user@name {
+}
