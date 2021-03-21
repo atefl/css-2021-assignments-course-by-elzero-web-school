@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .d1 {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: blueviolet;
+            background-color: #8a2be2;
+            background-color: hsl(271, 76%, 53%);
+            background-color: rgb(138,43,226);
+        }
+        .d2 {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: hsla(271, 76%, 53%, 50%);
+            margin-top: 20px;
+        }
+        .d2 {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: hsla(271, 76%, 53%, 50%);
+            margin-top: 20px;
+        }
+        .d3 {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: hsla(271, 76%, 53%, 0.1);
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d1">Noramal Div</div>
+    <div class="d2">Noramal Div</div>
+    <div class="d3">Normal Div</div>
+</body>
+</html>
