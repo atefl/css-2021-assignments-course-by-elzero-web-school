@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .parent {
+            width: 800px;
+            text-align: center;
+            background-color: #eeeeee;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        .full-width {
+            width: calc(800px - 30px);
+            }
+
+        .third {
+            width: calc((800px - (15px * 4)) / 3);
+            }
+
+        .half {
+            width: calc((800px - (15px * 3)) / 2);
+            }
+
+        .quarter {
+            width: calc((800px - (15px * 5)) / 4);
+            }
+
+        .full-width,
+        .third,
+        .half,
+        .quarter {
+            background-color: #dddddd;
+            padding: 30px 0;
+            float: left;
+            margin: 15px 0 0 15px;
+            }
+
+        .quarter {
+            margin-bottom: 15px;
+            }
+
+        .clear {
+            clear: both;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="full-width">Full width</div>
+        <div class="clear"></div>
+        <div class="third">1/3</div>
+        <div class="third">1/3</div>
+        <div class="third">1/3</div>
+        <div class="clear"></div>
+        <div class="half">1/2</div>
+        <div class="half">1/2</div>
+        <div class="clear"></div>
+        <div class="quarter">1/4</div>
+        <div class="quarter">1/4</div>
+        <div class="quarter">1/4</div>
+        <div class="quarter">1/4</div>
+        <div class="clear"></div>
+</div>
+</body>
+</html>
