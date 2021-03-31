@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        ul {
+            width: 400px;
+            margin: 0 auto;
+            list-style: none;
+            font-family: cursive;
+        }
+        .html, .css, .js {
+            background-color: #eee;
+            padding: 10px;
+        }
+        .html, .css {
+            list-style-position: outside;
+        }
+        .js  {
+            /* list-style-position: inside; */
+        }
+        li {
+            background-color: #fff;
+            margin: 10px;
+            padding: 15px;
+        }
+        ul .css ol {
+            list-style-type: upper-roman;
+        }
+        ul .js ul{
+            list-style-type: circle;
+            list-style-position: inside;
+            margin-left: -48px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="html">
+            HTML
+            <ol start="10">
+            <li>Slim</li>
+            <li>Pugjs</li>
+            <li>HAML</li>
+            </ol>
+        </li>
+        <li class="css">
+            CSS
+            <ol>
+            <li>SASS</li>
+            <li>LESS</li>
+            <li>PostCSS</li>
+            </ol>
+        </li>
+        <li class="js">
+            JavaScript
+            <ul>
+            <li>Vuejs</li>
+            <li>Sveltejs</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
