@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            counter-reset: p-count;
+        }
+        p {
+            counter-increment: p-count;
+            content: counter(p-count);
+            background-color: #EFEFEF;
+            margin: 20px auto;
+            text-align: center;
+            padding: 20px;
+            width: 645px;
+            font-size: 2em;
+            border-right: 7px solid #f44336;
+            position: relative;
+        }
+        p::before {
+            content: counter(p-count);
+            position: absolute;
+            background-color: #f44336;
+            color: #fff;
+            position: absolute;
+            width: 77px;
+            height: 77px;
+            top: 0;
+            left: 1px;
+            line-height: 2.3;
+            
+        }
+    </style>
+</head>
+<body>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+</body>
+</html>
