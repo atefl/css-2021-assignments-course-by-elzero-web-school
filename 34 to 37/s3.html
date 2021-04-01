@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+        p {
+            background-color: #efefef;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            width: 350px;
+            border-left: 5px solid #e91e63;
+            position: relative;
+        }
+
+        p::before {
+            content: attr(data-person);
+            position: absolute;
+            text-align: center;
+            padding: 5px;
+            background-color: #eee;
+            width: 60px;
+            left: -112px;
+            top: 5px;
+        }
+        p::after {
+            content: "";
+            width: 0;
+            height: 0;
+            padding: 0;
+            background-color: transparent;
+            position: absolute;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent #e91e63 transparent transparent;
+            display: block;
+            left: -25px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+</body>
+</html>
