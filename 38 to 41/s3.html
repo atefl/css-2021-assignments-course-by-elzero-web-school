@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .parent {
+            margin: 0 auto;
+            width: 550px;
+        }
+        .parent .basic, .parent .pro {
+            float: left;
+            margin: 20px;
+            box-sizing: border-box;
+            background-color: #EEE;
+            width: 230px;
+            height: 320px;
+            padding: 20px;
+            border-radius: 3px;
+            position: relative;
+        }
+        
+        h4 {
+            background-color: #03a9f4;
+            padding: 20px;
+            color: #fff;
+            border-radius: 10px;
+            text-align: center;
+        }
+        p {
+            background-color: #ddd;
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+            width: 130px;
+            height: 130px;
+            line-height: 4;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .basic::after {
+            content: "";
+            background-color: #03a9f4;
+            display: inline-block;
+            width: 2px;
+            height: 320px;
+            position: absolute;
+            top: 0;
+            right: -22px;
+        }
+        .pro::before {
+            content: "Or";
+            color: #fff;
+            background-color: #03a9f4;
+            position: absolute;
+            padding: 5px;
+            border-radius: 50%;
+            bottom: 142px;
+            left: -33px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="basic">
+            <h4>Basic</h4>
+            <p>Free</p>
+        </div>
+        <div class="pro">
+            <h4>Pro</h4>
+            <p>$30</p>
+        </div>
+    </div>
+</body>
+</html>
