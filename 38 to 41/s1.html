@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            counter-reset: elements-counter;
+        }
+        div {
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            margin: 20px 9%;
+            padding: 20px;
+            float: left;
+            border: 3px solid #000;
+            border-radius: 63% 77%;
+            line-height: 4;
+            background-color: #eeee;
+            
+            position: relative;
+            box-shadow: 4px 5px 0px 0px #2196f3,
+                        -4px -5px 0px 1px #e91e63;
+
+            }
+        
+        div::before {
+            counter-increment: elements-counter;
+            content: counter(elements-counter);
+            color: #fff;
+            background-color: #000;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            padding: 5px 11px;
+            position: relative;
+            top: -52px;
+            right: -7px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
