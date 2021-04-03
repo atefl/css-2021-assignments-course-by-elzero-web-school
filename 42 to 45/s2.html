@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div  {
+            background-color: #EEEEEE !important;
+            border: none !important;
+            font-size: 20px !important;
+            width: 400px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+            color: #000 !important;
+            position: relative;
+        }
+        div::before {
+            content: "Elzero";
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            text-align: center;
+            background-color: inherit;
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+  <div style="
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border: 1px solid blue;
+    font-size: 80px;">
+    Hello Div
+  </div>
+</body>
+</html>
