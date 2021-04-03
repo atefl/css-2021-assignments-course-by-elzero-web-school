@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: arial;
+    }
+
+        .parent {
+        background-color: #eee;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+        margin: 10px auto;
+        position: relative;
+        padding: 10px;
+        top: 0px;
+        transition: 0.5s 0.5s top linear;
+    }
+
+        .one {
+        background-color: inherit;
+        padding: 10px;
+        margin: 10px;
+    }
+
+        .two {
+        background-color: #ccc;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+        top: 0px;
+        transition: 0.5s 0.5s top linear;
+    }
+        .parent:hover {
+        top: 20px;
+    }
+        .parent:hover .two {
+        top: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one">Will Go Up On Hover in Half second</div>
+        <div class="two">Will Go Down After Half second</div>
+    </div>
+</body>
+</html>
