@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+           * {
+               box-sizing: border-box;
+               -webkit-box-sizing: border-box;
+           }
+          .parent {
+              width: 600px;
+              height: 300px;
+              margin: 0 auto;
+              background-color: #eee;
+              display: flex;
+              flex-direction: row;
+              align-content: space-between;
+              justify-content: space-between;
+              flex-wrap: wrap;
+          }
+          .parent div {
+              background-color: #f44336;
+              margin: 10px;
+              padding: 5px;
+              width: calc(90% / 3);
+
+              text-align: center;
+              color: #fff;
+          }
+
+            
+        
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
