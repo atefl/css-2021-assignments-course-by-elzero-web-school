@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .parent {
+            width: 600px;
+            height: 300px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: row;
+            background-color: #eee;
+            /* flex-wrap: wrap; */
+            text-align: center;
+            justify-content: space-between;
+        }
+        .one, .two, .three, .four {
+            margin: 1%;
+            padding: 10px 0;
+            flex-basis: calc((100% - (6% * 6)) / 4);
+            height: 48%;
+            color: #fff;
+            line-height: 8;
+        }
+        .one {
+            background-color: #ff9800;
+            margin-right: 40px;
+            align-self: flex-start;
+            order: 2;
+        }
+        .two {
+            background-color: #8bc34a;
+            margin-right: 40px;
+            align-self: flex-end;
+            order: 2;
+        }
+        .three {
+            background-color: #795548;
+            align-self: flex-start;
+            order: 3;
+        }
+        .four {
+            background-color: #673ab7;
+            margin-right: 40px;
+            align-self: flex-end;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+</body>
+</html>
