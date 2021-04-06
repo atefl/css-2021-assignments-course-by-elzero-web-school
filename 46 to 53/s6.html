@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            :root {
+                --margin: 10px;
+                --background: #ddd;
+                --p-left: 10px;
+                --p-top: 10px;
+            }
+            .page {
+                width: 1000px;
+                margin: 10px auto;
+                background-color: #eee;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            /* .logo, .links, .content, .sidebar, .footer {
+                
+                
+            } */
+            .header {
+                display: flex;
+                width: 100%;
+            }
+            
+            .logo {
+                margin: var(--margin);
+                margin-right: 0;
+                background-color: var(--background);
+                width: 10%;
+                padding: 10px 0;
+                text-align: center;
+            }
+            .links {
+                margin: var(--margin);
+                background-color: var(--background);
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            ul {
+                list-style: none;
+                display: inline-block;
+                display: flex;
+            }
+            ul li {
+                margin: 10px;
+                align-self: flex-end;
+            }
+            .main-area {
+                width: 100%;
+                display: flex;
+                height: 300px;
+                margin-top: -10px;
+            }
+            .content {
+                margin: var(--margin);
+                margin-right: 0;
+                background-color: var(--background);
+                width: 75%;
+                padding-top: var(--p-top);
+                padding-left: var(--p-left);
+                
+            }
+            .sidebar {
+                margin: var(--margin);
+                background-color: var(--background);
+                width: 25%;
+                padding-top: var(--p-top);
+                padding-left: var(--p-left);
+            }
+            .footer {
+                margin: var(--margin);
+                background-color: var(--background);
+                width: 100%;
+                display: flex;
+                padding: 10px 0;
+                margin-top: 0;
+            }
+            .copyright {
+                justify-content: flex-start;
+                width: 50%;
+                padding-left: var(--p-left);
+            }
+            .design {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 50%;
+                padding-right: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <div class="logo">Logo</div>
+                <ul class="links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                </ul>
+            </div>
+        <div class="main-area">
+            <div class="content">Content</div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <div class="footer">
+            <div class="copyright">Copyright 2021</div>
+            <div class="design">Designed By Elzero</div>
+        </div>
+        </div>
+    </body>
+</html>
