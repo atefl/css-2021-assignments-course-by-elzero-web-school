@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .layout {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 8% 82% 8%;
+            grid-template-areas: "header header header header header header header header header header"
+                                "section section section section section section section aside aside aside"
+                                 "foot foot foot foot foot foot foot foot foot foot";
+        }
+        header {
+            grid-area: header;
+            background-color: #03a9f4;
+        }
+        section {
+            grid-area: section;
+            background-color: #ff5722;
+        }
+        aside {
+            grid-area: aside;
+            background-color: #607d8b;
+        }
+        footer {
+            grid-area: foot;
+            background-color: #03a9f4;
+        }
+        header::before {
+            content: "Header";
+            color: #fff;
+            line-height: 3;
+            margin-left: 15px;
+        }
+        section::before {
+            content: "Section";
+            color: #fff;
+            line-height: 3;
+            margin-left: 15px;
+        }
+        aside::before {
+            content: "Aside";
+            color: #fff;
+            line-height: 3;
+            margin-left: 15px;
+        }
+        footer::before {
+            content: "Footer";
+            color: #fff;
+            line-height: 3;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header></header>
+        <section></section>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
