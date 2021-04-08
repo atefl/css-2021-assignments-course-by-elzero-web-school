@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+        .grid {
+            background-color: #ddd;
+            padding: 20px;
+            width: 800px;
+            height: 400px;
+            margin: 10px auto;
+            color: #fff;
+            display: grid;
+            grid-template-columns: 2ch 1fr 1fr 2ch;
+            grid-template-rows: 1fr 3ch;
+            gap: 20px;
+            text-align: center;
+            }
+        .grid div {
+            background-color: #403f3f;
+            font-weight: bold;
+            }
+        div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+        line-height: 20;
+        }
+        div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8) {
+        line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
