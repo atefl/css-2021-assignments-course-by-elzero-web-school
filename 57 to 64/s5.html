@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .grid {
+            background-color: #ddd;
+            padding: 20px;
+            width: 800px;
+            height: 400px;
+            margin: 10px auto;
+            color: #fff;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 20px;
+        }
+        .grid div {
+            background-color: #2196f3;
+            text-align: center;
+            font-weight: bold;
+            line-height: 3;
+        }
+        .grid .one {
+            grid-column: 1 / span 10;
+            order: 1;
+        }
+        .grid .two {
+            grid-column: 1/ span 7;
+        }
+        .grid .three {
+            grid-column: 8 / span 3;
+        }
+        .grid .five {
+            grid-column: 4 / span 7;
+            grid-row: 3 / span 3;
+            line-height: 12;
+        }
+        .grid .four {
+            grid-column: 1 / span 3;
+        }
+        .grid .six {
+            grid-column: 1 / span 3;
+        }
+        .grid .seven {
+            grid-column: 1 / span 3;
+        }
+        .grid .eight {
+            grid-column: 1 / span 10;
+            order: -1;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+    </div>
+</body>
+</html>
