@@ -3,34 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         .grid {
-            background-color: #ddd;
-            padding: 20px;
-            width: 800px;
-            height: 400px;
-            margin: 10px auto;
+            background-color: #eee;
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 30px);
-            gap: 20px;
-            align-content: space-between;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(3, 1fr) auto;
+            grid-template-areas: "osama osama osama osama osama osama osama osama ahmed ahmed shady shady"
+                                 "med med mah mah mah mah mah mah mah mah mah mah"
+                                 "ezz ezz ezz ezz ezz ezz ezz ezz ezz ezz ezz ezz"
+                                 "medSayed medSayed medSayed ibr ibr ibr gam gam gam ema ema ema";
+            gap: 10px;
+            font-family: sans-serif;
+            padding: 20px;
         }
         .grid div {
-            background-color: #E91E63;
-            text-align: center;
-            color: #fff;
-            font-weight: bold;
-            font-size: 25px;
-            font-family: sans-serif;
+            padding: 0 20px;
+            border-bottom: 2px solid #ff3d00;
+            position: relative;
         }
+        .grid div::after {
+            content: "``";
+            position: absolute;
+            font-weight: bolder;
+            font-size: 50px;
+            color: #b1bbc8;
+            bottom: -30px;
+            right: 5px;
+        }
+        .osama {
+            background-color: #fff;
+            grid-area: osama;
+            grid-column: 1 / span 6;
+        }
+        .ahmed{
+            background-color: #fff;
+            grid-area: ahmed;
+            grid-column: 7 / span 3;
+        }
+        .shady {
+            background-color: #000;
+            color: #fff;
+            grid-area: shady;
+            grid-column: 10/ span 3;
+            grid-row: 1 / span 3;
+        }
+        .mohamed {
+            background-color: #fff;
+            grid-area: med;
+            grid-column: 1 / span 3;
+            grid-row: 2 / span 2;
+        }
+        .mahmoud {
+            background-color: #000;
+            grid-area: mah;
+            grid-column: 4 / span 6;
+            color: #fff;
+        }
+        .ezzeldin {
+            background-color: #fff;
+            grid-area: ezz;
+            grid-column: 4 / span 6;
+        }
+        .med-sayed {
+            background-color: #fff;
+            grid-area: medSayed;
+        }
+        .ibrahim {
+            background-color: #000;
+            grid-area: ibr;
+            color: #fff;
+        }
+        .gamal {
+            background-color: #fff;
+            grid-area: gam;
+        }
+        .eman {
+            background-color: #fff;
+            grid-area: ema;
+        }
+        small {
+            color: #b1bbc8;
+            position: relative;
+            top: -17px;
+        }
+        
+
     </style>
 </head>
 <body>
     <div class="grid">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        <div class="osama">
+            <h4>Osama Mohamed</h4>
+            <small>Full-Stack Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam ratione veritatis laudantium, possimus adipisci provident omnis. Excepturi, blanditiis dolorum? Earum cupiditate deleniti aliquid animi neque corporis eligendi tenetur sunt!</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique animi ipsam placeat. Odit eligendi pariatur dignissimos voluptas ab corporis aliquam assumenda mollitia facilis numquam architecto qui exercitationem, non, excepturi dolorem!</p>
+            
+        </div>
+        <div class="ahmed">
+            <h4>Ahmed Sayed</h4>
+            <small>IOS Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aliquam ut modi?</p>
+        </div>
+        <div class="shady">
+            <h4>Shady Nabil</h4>
+            <small>Full-Stack Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam ratione veritatis laudantium, possimus adipisci provident omnis. Excepturi, blanditiis dolorum? Earum cupiditate deleniti  aliquid animi</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi ducimus voluptatibus nobis iste provident porro quo. Tempora ratione, repellendus commodi ullam cum modi quas sint dignissimos nam architecto iste. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere rem nobis molestias quibusdam ea asperiores temporibus a cum atque debitis, enim corporis, impedit voluptates. Commodi soluta quos id sunt iure?</p>
+
+        </div>
+        <div class="mohamed">
+            <h4>Mohamed Ibrahim</h4>
+            <small>.Net Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates excepturi enim facere voluptatem. Praesentium, delectus! Quidem totam molestiae ipsum dolorem? Sed ipsum fugit explicabo, perferendis itaque eaque repellendus minus consequatur.</p>
+        </div>
+        <div class="mahmoud">
+            <h4>Mahmoud Mohamed</h4>
+            <small>Full-Stack Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi consectetur adipisicing elit. Quisquam aliquam ut modi?</p>
+        </div>
+        <div class="ezzeldin">
+            <h4>Ezz Eldin</h4>
+            <small>Front-End Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,  Quisquam aliquam ut modi consectetur adipisicing elit. Quisquam aliquam ut modi?</p>
+         </div>
+        <div class="med-sayed">
+            <h4>Mohamed Sayed</h4>
+            <small>IOS Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="ibrahim">
+            <h4>Ibrahim Sayed</h4>
+            <small>IOS Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="gamal">
+            <h4>Gamal Sayed</h4>
+            <small>IOS Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="eman">
+            <h4>Eman Sayed</h4>
+            <small>IOS Developer</small>
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, Quisquam aliquam ut modi?</p>
+            <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
     </div>
 </body>
 </html>
