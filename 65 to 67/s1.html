@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: #EEE;
+            color: #03a9f4;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 48px;
+            line-height: 4;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        div::after {
+            content: "";
+            position: absolute;
+            width: 313px;
+            height: 208px;
+            background-color: #03a9f4;
+            z-index: -1;
+            left: -7px;
+            top: -4px;
+            transform: rotate(-7deg);
+        }
+        div::before {
+            content: "";
+            position: absolute;
+            width: 314px;
+            height: 212px;
+            background-color: #e91e63;
+            z-index: -2;
+            left: -8px;
+            top: -7px;
+            transform: rotate(6deg);
+        }
+    </style>
+</head>
+<body>
+    <div>Elzero</div>
+</body>
+</html>
