@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            transform: translate(50%,50%);
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #eee;
+            text-align: center;
+            font-size: 30px;
+            line-height: 6.5;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: -3px solid #ccc;
+            border-radius: 50%;
+            position: relative;
+        }
+        div::before {
+            content: "";
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            z-index: -2;
+            background-image: linear-gradient(275deg,
+            #e02f82 75%,
+            #fff 75%,
+            #fff 100%);
+            transition: 0.5s;
+        }
+        div::after {
+            content: "";
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            z-index: -3;
+            background-image: linear-gradient( 90deg, 
+            #2196f3 75%,
+            #ffffff 75%, 
+            #ffffff 100%);
+            transition: 0.5s;
+        }
+        div:hover::before {
+            transform: rotate(180deg);
+        }
+        div:hover::after {
+            transform: rotate(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>Elzero</div>
+</body>
+</html>
