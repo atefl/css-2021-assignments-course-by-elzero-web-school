@@ -23,18 +23,17 @@
         }
         div::before {
             content: "";
-            width: 210px;
-            height: 210px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             position: absolute;
-            left: -5px;
-            top: -5px;
+            left: -9px;
+            top: -10px;
             z-index: -2;
-            background-image: linear-gradient(275deg,
-            #e02f82 75%,
-            #fff 75%,
-            #fff 100%);
-            transition: 0.5s;
+            border-right: 10px solid #ff0066;
+            border-top: 10px solid #ff0066;
+            border-bottom: 10px solid #ff0066;
+            border-left: 10px solid #fff;
         }
         div::after {
             content: "";
@@ -42,14 +41,13 @@
             height: 220px;
             border-radius: 50%;
             position: absolute;
-            left: -10px;
-            top: -10px;
+            left: -18px;
+            top: -20px;
             z-index: -3;
-            background-image: linear-gradient( 90deg, 
-            #2196f3 75%,
-            #ffffff 75%, 
-            #ffffff 100%);
-            transition: 0.5s;
+            border-left: 10px solid #2196f3;
+            border-top: 10px solid #2196f3;
+            border-bottom: 10px solid #2196f3;
+            border-right: 10px solid #fff;
         }
     </style>
 </head>
