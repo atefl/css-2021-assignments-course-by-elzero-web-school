@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        body{
+            transform: translate(50%,50%);
+        }
         div {
             width: 200px;
             height: 200px;
@@ -17,37 +20,36 @@
             border: -3px solid #ccc;
             border-radius: 50%;
             position: relative;
-            margin-top: 15%;
-            left: 40%;
         }
         div::before {
             content: "";
             width: 210px;
-            height: 214px;
+            height: 210px;
             border-radius: 50%;
-            border: 1px solid #fff;
             position: absolute;
-            left: -3px;
-            top: -8px;
+            left: -5px;
+            top: -5px;
             z-index: -2;
             background-image: linear-gradient(275deg,
             #e02f82 75%,
             #fff 75%,
             #fff 100%);
+            transition: 0.5s;
         }
         div::after {
             content: "";
-            width: 233px;
-            height: 226px;
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
             position: absolute;
-            left: -12px;
-            top: -13px;
+            left: -10px;
+            top: -10px;
             z-index: -3;
             background-image: linear-gradient( 90deg, 
             #2196f3 75%,
             #ffffff 75%, 
             #ffffff 100%);
+            transition: 0.5s;
         }
     </style>
 </head>
