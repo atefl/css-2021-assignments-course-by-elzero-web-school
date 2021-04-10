@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #eee;
+            text-align: center;
+            font-size: 30px;
+            line-height: 6.5;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: -3px solid #ccc;
+            border-radius: 50%;
+            position: relative;
+            margin-top: 15%;
+            left: 40%;
+        }
+        div::before {
+            content: "";
+            width: 210px;
+            height: 214px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            position: absolute;
+            left: -3px;
+            top: -8px;
+            z-index: -2;
+            background-image: linear-gradient(275deg,
+            #e02f82 75%,
+            #fff 75%,
+            #fff 100%);
+        }
+        div::after {
+            content: "";
+            width: 230px;
+            height: 227px;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: -13px;
+            z-index: -3;
+            background-image: linear-gradient( 90deg ,
+            #2196f3 75%,
+            #ffffff 75%,
+            #ffffff 100%
+    );
+
+    </style>
+</head>
+<body>
+    <div>Elzero</div>
+</body>
+</html>
