@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+        --bg-color: #ff5722;
+        --txt-color: #FFF; 
+        }
+        h1 {
+            width: 150px;
+            margin: 100px auto;
+            color: var(--txt-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+            z-index: 1;
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+        }
+        h1::before {
+            content: "";
+            background-color: var(--bg-color);
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: skew(10deg, 12deg);
+
+        }
+        h1::after {
+            content: "";
+            background-color: var(--bg-color);
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: skew(-10deg, -12deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Elzero</h1>
+</body>
+</html>
