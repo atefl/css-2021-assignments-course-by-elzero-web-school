@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        span {
+            width: 50px;
+            height: 50px;
+            margin: 50px auto;
+            background-color: #d8d8ff;
+            display: block;
+            border: 5px solid #000;
+            border-left: 5px solid transparent;
+            border-radius: 50%;
+            animation-name: spin;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+</body>
+</html>
