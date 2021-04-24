@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s2</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .parent div {
+            background-color: #EEE;
+            padding: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .parent div p {
+            font-weight: lighter;
+        }
+        /* Mobile And Small screens*/
+  
+        @media (max-width: 767px) {
+            .parent div {
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+        /* Medium Screens */
+  
+        @media (min-width: 992px) {
+            .parent div {
+                width: calc(50% - 14px);
+                line-height: 1.5;
+                margin: 7px;
+            }
+            .parent h4 {
+                color: red;
+            }
+        /* Large Screens */
+  
+        @media (min-width: 1200px) {
+            .parent div {
+                width: calc(25% - 20px);
+            }
+            .parent h4 {
+                color: #009688;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one">
+            <h4>Product One</h4>
+            <p>This Is Product</p>
+        </div>
+        <div class="two">
+            <h4>Product Two</h4>
+            <p>This Is Product</p>
+        </div>
+        <div class="three">
+            <h4>Product Three</h4>
+            <p>This Is Product</p>
+        </div>
+        <div class="four">
+            <h4>Product Three</h4>
+            <p>This Is Product</p>
+        </div>
+    </div>
+</body>
+</html>
