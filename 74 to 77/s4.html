@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+}
+.letters .e {
+    display: flex;
+    width: 45%;
+    position: relative;
+}
+.letters .e .left {
+    width: 50px;
+    height: 300px;
+    background-color: #323234;
+}
+.letters .e .right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+.letters .e .right div {
+    background-color: #323234;
+    height: 50px;
+}
+.letters .l {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 300px;
+    position: relative;
+}
+.letters .l div:first-child{
+    background-color: #323234;
+    width: 50px;
+    height: 250px;
+}
+.letters .l div:last-child{
+    background-color: #323234;
+    width: 65%;
+    height: 50px;
+}
+.letters .e::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #fcb400;
+    left: 106px;
+    top: 10px;
+    animation-name: e;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.letters .l div:last-child:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #fcb400;
+    position: absolute;
+    right: 92px;
+    bottom: 11px;
+    animation-name: l;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes l {
+    0% {
+      opacity: 1;
+      right: 92px;
+      bottom: 11px;
+      
+    }
+    20% {
+      right: 185px;
+      bottom: 11px;
+      opacity: 1;
+    }
+    40% {
+        right: 185px;
+        bottom: 101px;
+        opacity: 1;
+    }
+    60% {
+        right: 185px;
+        bottom: 160px;
+        opacity: 1;
+    }
+    80% {
+        right: 185px;
+        bottom: 210px;
+        opacity: 1;
+    }
+    100% {
+        right: 185px;
+        bottom: 260px;
+        opacity: 0;
+    }
+  }
+  @keyframes e {
+    0%,
+    100% {
+      top: 7.5px;
+      right: 7.5px;
+    }
+    10%,
+    90% {
+      top: 7.5px;
+      right: 137.5px;
+    }
+    20%,
+    40% {
+      top: 142.5px;
+      right: 137.5px;
+    }
+    30% {
+      right: 7.5px;
+      top: 142.5px;
+    }
+    50%,
+    70% {
+      top: 277.5px;
+      right: 137.5px;
+    }
+    60% {
+      top: 277.5px;
+      right: 7.5px;
+    }
+  }
+  @keyframes e {
+    0% {
+      left: 106px;
+      top: 10px;
+    }
+    
+    10% {
+        left: 10px;
+        top:10px;
+    }
+    20% {
+        left: 10px;
+        top: 60px;
+    }
+    30% {
+        left: 10px;
+        top: 100px;
+    }
+    
+    40% {
+        left: 10px;
+        top: 135px;
+    }
+    50% {
+        left: 100px;
+        top: 135px;
+    }
+    60% {
+        left: 10px;
+        top: 135px;
+    }
+    70% {
+        left: 10px;
+        top: 260px;
+    }
+    80% {
+        left: 100px;
+        top: 260px;
+    }
+    90% {
+        left: 10px;
+        top: 260px;
+    }
+    95% {
+        left: 10px;
+        top: 10px;
+    }
+    
+  }
+    </style>
+</head>
+<body>
+    <div class="letters">
+        <div class="e">
+          <div class="left"></div>
+          <div class="right">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="l">
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+</body>
+</html>
