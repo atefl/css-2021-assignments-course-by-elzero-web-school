@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s2</title>
+    <style>
+        .arrow {
+            background-color: #DDD;
+            margin: 50px auto;
+            padding: 30px;
+            width: 400px;
+            display: block;
+            position: relative;
+        }
+        .top::before {
+            content: '';
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent transparent #DDD transparent;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+        .right::before {
+            content: '';
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent transparent transparent #DDD;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(100%, -50%);
+        }
+        .bottom::before {
+            content: '';
+            border-width: 15px;
+            border-style: solid;
+            border-color: #DDD transparent transparent transparent;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+        }
+        .left::before {
+            content: '';
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent #DDD transparent transparent;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-100%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow top">Elzero</div>
+    <div class="arrow right">Elzero</div>
+    <div class="arrow bottom">Elzero</div>
+    <div class="arrow left">Elzero</div>
+</body>
+</html>
